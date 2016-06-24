@@ -11,19 +11,20 @@
 
 	<body>
 		<div>
-			<form action="next.html">
+			<form action="next.html"  onsubmit="confrim1();">
 				<input type="text"  required="required" maxlength="30" placeholder="שם"/>
 				<br/>
 				<input type="email"  required="required" oninvalid="this.setCustomValidity('אימייל לא חוקי הוא חייב להכיל @ ושיומת לדוגמה example@example.com')" maxlength="30" placeholder="דואר אלקטרוני" />
 				<br/>
-				<input type="password" required="required" placeholder="סיסמה" />
+				<input id="pass1"  type="password" required="required" placeholder="סיסמה" />
 				<br/>
-				<input type="password" required="required" placeholder="סיסמה שינית" />
+				<input id="pass2" type="password" required="required" placeholder="סיסמה שינית" />
 				<br/>
 				<br/>
 				<input type="submit" value="submit">
 				<input type="reset" value="Reset">
 			</form>
 		</div>
+	<script src="js/myjs.js"></script>
 	</body>
 </html>
