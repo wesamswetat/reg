@@ -1,0 +1,11 @@
+body {
+	direction: rtl;
+}
+
+input:invalid{
+	color: red;
+}
+
+input:valid {
+	color: green;
+}
